@@ -1,6 +1,7 @@
-import './App.css';
+import './assets/css/App.css';
 import axios from "axios";
 import React, { useState, useLayoutEffect } from "react";
+import MainPage from './pages/Main';
 
 function App() {
   const [applicantData, setapplicantData] = useState();
@@ -18,8 +19,9 @@ function App() {
 
   return (
     <div className="App">
-      <h2>Hi NoPainNo</h2>
-      {loading?applicantData.title:""}
+      {/* <h2>Hi NoPainNo</h2>
+      {loading?applicantData.title:""} */}
+      <MainPage/>
     </div>
   )
 }
