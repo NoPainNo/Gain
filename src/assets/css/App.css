@@ -1,6 +1,9 @@
 html{
     background-color: #F5F5F5;
 }
+a {
+    text-decoration: none;
+}
 /* MainPage */
 .App{
     display: flex;
@@ -9,7 +12,7 @@ html{
     justify-content: center;
 }
 .Main {
-    width: 30%;
+    width: 360px;
     display: flex;
     text-align: center;
     flex-direction: column;
@@ -18,7 +21,7 @@ html{
 }
 .Main Button {
     background-color: #374B73;
-    width:70%;
+    width:350px;
     border-radius: 30px;
     height: 70px;
     color:white;
@@ -69,11 +72,12 @@ html{
     align-items: center;
     justify-content: center;
     width: 100vw;
+    height: 100%;
 }
 
 .Main_ Button {
     background-color: #374B73;
-    width:70%;
+    width:350px;
     border-radius: 30px;
     height: 70px;
     color:white;
@@ -86,7 +90,7 @@ html{
     font-size:4.5em;
     font-weight: 700;
     color:#374B73;
-    margin: 20px;
+    margin: 30px;
 }
 .Main_ p {
     font-style: Noto Sans KR;
@@ -97,6 +101,7 @@ html{
     color:#374B73;
 }
 .Main_ .pText {
+    padding:27px;
     padding-bottom: 50px;
 }
 .Main_ .logo {
@@ -117,7 +122,9 @@ html{
 }
 .Main_ .gain{
     width: 50vw;
+    height: 100vh;
     position: relative;
+    background-color: #F5F5F5;
 }
 .Main_ .gain .gainImg{
     position:absolute;
@@ -132,5 +139,14 @@ html{
     text-align: center;
     flex-direction: column;
     align-items: center;
+    
+}
+.Main_ .alineWelcome{
+    height: 100vh;
+    display: flex;
+    align-items: center;
     background-color: #E9B657;
+}
+.Main_ .socialMediaLogo{
+    margin-top:80px;
 }
