@@ -3,7 +3,7 @@ import axios from "axios";
 import React, { useState, useLayoutEffect } from "react";
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import MainPage from './pages/Main';
-import CreatePage from './pages/Create';
+import CreatePage from './pages/Create';
 
 
 function App() {
@@ -22,8 +22,8 @@ function App() {
 
   return (
     <div className="App">
-      {/* <h2>Hi NoPainNo</h2>
-      {loading?applicantData.title:""} */}
+      {/* <h2>Hi NoPainNo</h2> */}
+      {/* {loading?applicantData.description:""} */}
       {/* <MainPage/> */}
       <BrowserRouter>
         <Routes>
