@@ -2,6 +2,7 @@ import React from 'react';
 import Button from '@mui/material/Button';
 import gainImg from '../assets/img/GAIN 1.png';
 import logoImg from '../assets/img/logoImg 1.png';
+import { Link } from "react-router-dom";
 
 export default function Main(){
     return (
@@ -17,7 +18,9 @@ export default function Main(){
                 <p>당신의 특별한 캐릭터</p>
                 <p>지금 바로 만들어보세요!</p>
             </div>
-            <Button variant='contained'>START</Button>
+            <Link to="/create">
+                <Button variant='contained'>START</Button>
+            </Link>
         </div>
     );
 }
