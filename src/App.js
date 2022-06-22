@@ -5,6 +5,7 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import MainPage from './pages/Main';
 import MainPage_ from './pages/Main_';
 import CreatePage from './pages/Create';
+import { useMediaQuery } from 'react-responsive'
 
 function App() {
   const [applicantData, setapplicantData] = useState();
@@ -20,6 +21,10 @@ function App() {
     setLoading(true);
   };
 
+  const isMobileDevice = useMediaQuery({
+    query: "(minWidth: 900px)",
+  });
+
   return (
     <div className="App">
       {/* <h2>Hi NoPainNo</h2>
@@ -27,7 +32,7 @@ function App() {
       {/* <MainPage/> */}
       <BrowserRouter>
         <Routes>
-          <Route path="/" element={<MainPage />}/>
+          <Route path="/" element={<MainPage/>}/>
           <Route path="/main" element={<MainPage_/>}/>
           <Route path="/create" element={<CreatePage />}/>
         </Routes>
