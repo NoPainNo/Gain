@@ -14,11 +14,13 @@ a {
 }
 .Main {
     height:100vh;
-    width: 360px;
+    width: 390px;
     display: flex;
     text-align: center;
     flex-direction: column;
     align-items: center;
+    background-image: url( "../img/disney.png");
+    background-size: cover;
 }
 .Main Button {
     background-color: #374B73;
@@ -177,7 +179,7 @@ a {
     width: 780px;
 }
 .Create .rec {
-    margin: 15px;
+
 }
 .Create .imgFrame {
     border: 4px dotted #989898;
@@ -185,7 +187,18 @@ a {
     height: 354px;
     position: relative;
 }
-.Create .imgFrame img {
+.Create .borderBox {
+    border: 3px solid #E9B657;
+    padding: 0;
+    margin: 10px;
+
+}
+#previewImg{
+    object-fit: contain;
+    width: 354px;
+    height: 354px;
+}
+#defaultImg{
     position: absolute;
     left:50%;
     top:50%;
@@ -226,6 +239,18 @@ a {
     font-weight: 700;
     font-size:25px;
     margin-top:19px;
+}
+.input-file-button{
+    background-color: #374B73;
+    width:350px;
+    border-radius: 25px;
+    height: 56px;
+    color:#E9B657;
+    font-family: Inter;
+    font-weight: 700;
+    font-size:25px;
+    margin-top:19px;
+    line-height: 56px;
 }
 .Create .submitButton {
     background-color: #E9B657;
@@ -347,3 +372,4 @@ a {
 #file-upload-button{
     background-color: #374B73;
 }
+
