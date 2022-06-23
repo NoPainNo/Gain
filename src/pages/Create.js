@@ -1,4 +1,5 @@
-import React, { useEffect } from 'react';
+import React from 'react';
+import { Link } from "react-router-dom";
 import Button from '@mui/material/Button';
 import gainImg from '../assets/img/GAIN 3.png';
 import avatar from '../assets/img/avatar.png';
@@ -12,6 +13,7 @@ import img7 from '../assets/img/character/957.png';
 import img8 from '../assets/img/character/972.png';
 import img9 from '../assets/img/character/5088.png';
 import { useState } from 'react';
+
 
 export default function Create(){
     const [imageSrc, setImageSrc] = useState('');
@@ -70,7 +72,9 @@ export default function Create(){
                         <div className="borderBox" onClick={(e) => clickFilter(e.target)}><img alt='8' className='rec' src={img8}/></div>
                         <div className="borderBox" onClick={(e) => clickFilter(e.target)}><img alt='9' className='rec' src={img9}/></div>
                 </div>
-                <Button className="submitButton" variant='contained'>결과 확인하기</Button>
+                <Link to="/result">
+                    <Button className="submitButton" variant='contained'>결과 확인하기</Button>
+                </Link>
             </div>
         </div>
     );
