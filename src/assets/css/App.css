@@ -19,7 +19,6 @@ a {
     text-align: center;
     flex-direction: column;
     align-items: center;
-    /* justify-content: center; */
 }
 .Main Button {
     background-color: #374B73;
@@ -128,7 +127,7 @@ a {
     width: 50vw;
     height: 100vh;
     position: relative;
-    background-color: #F5F5F5;
+    background-color: #F4F3EF;
 }
 .Main_ .gain .gainImg{
     position:absolute;
@@ -153,4 +152,25 @@ a {
 }
 .Main_ .socialMediaLogo{
     margin-top:80px;
+}
+
+/* Create */
+
+.Create{
+    display: grid;
+    grid-template-columns: 7fr 8fr;
+}
+.Create .uploadImg {
+
+}
+.Create .sampleImg {
+    text-align: right;
+}
+.Create .imgArray {
+    display: flex;
+    flex-wrap: wrap;
+    width: 780px;
+}
+.Create .rec {
+    margin: 15px;
 }

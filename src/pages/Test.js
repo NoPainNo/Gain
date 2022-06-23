@@ -5,6 +5,7 @@ import axios from "axios";
 export default function Test(){
     const [applicantData, setapplicantData] = useState();
     const [loading, setLoading] = useState(false);
+    const [isUpload, setIsupload] = useState(false);
 
     useLayoutEffect(() => {
         readApplicantData();
@@ -19,14 +20,15 @@ export default function Test(){
 
     const uploadModule = async (e) => {
         e.preventDefault();
-        // const desc = e.target[0].value;
+        // const number = e.target[1].value;
+        const number = 1;
 
         //event로 file 객체 얻기
         const upload_file = e.target[0].files[0];
 
         //폼 데이터 생성
         const formData = new FormData();
-        // formData.append("description",desc);
+        formData.append("number",number);
         formData.append("files",upload_file);
         formData.append("enctype","multipart/form-data");
 
@@ -41,7 +43,9 @@ export default function Test(){
                 "Content-Type": "multipart/form-data",
             }
         }).then(function (response){
-            console.log(response)
+            console.log("사진업로드 완료")
+            setIsupload(true);
+            // const imgGet = axios.get("http://localhost:8000/downloadImg");
         })
     }
 

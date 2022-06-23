@@ -5,13 +5,18 @@ import MainPage from './pages/Main';
 import MainPage_ from './pages/Main_';
 import CreatePage from './pages/Create';
 import Test from './pages/Test';
+import { useMediaQuery } from 'react-responsive'
 
 function App() {
+  const isMobileDevice = useMediaQuery({
+    query: "(minWidth: 900px)",
+  });
+
   return (
     <div className="App">
       <BrowserRouter>
         <Routes>
-          <Route path="/" element={<MainPage />}/>
+          <Route path="/" element={<MainPage/>}/>
           <Route path="/main" element={<MainPage_/>}/>
           <Route path="/create" element={<CreatePage />}/>
           <Route path="/test" element={<Test />}/>
