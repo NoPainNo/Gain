@@ -41,6 +41,7 @@ export default function Create(){
     }
     
     return (
+        
         <div className='Create'>
             <div className='alineUploadImg'>
                 <div className='uploadImg'>
@@ -58,23 +59,6 @@ export default function Create(){
     
                     <img alt='test' className='gainLogo' src={gainImg}/>
                 </div>
-            </div>
-            <div className='sampleImg'>
-                <h2>choose one</h2>
-                <div className='imgArray'>
-                        <div className="borderBox" onClick={(e) => clickFilter(e.target)}><img alt='1' className='rec' src={img1}/></div>
-                        <div className="borderBox" onClick={(e) => clickFilter(e.target)}><img alt='2' className='rec' src={img2}/></div>
-                        <div className="borderBox" onClick={(e) => clickFilter(e.target)}><img alt='3' className='rec' src={img3}/></div>
-                        <div className="borderBox" onClick={(e) => clickFilter(e.target)}><img alt='4' className='rec' src={img4}/></div>
-                        <div className="borderBox" onClick={(e) => clickFilter(e.target)}><img alt='5' className='rec' src={img5}/></div>
-                        <div className="borderBox" onClick={(e) => clickFilter(e.target)}><img alt='6' className='rec' src={img6}/></div>
-                        <div className="borderBox" onClick={(e) => clickFilter(e.target)}><img alt='7' className='rec' src={img7}/></div>
-                        <div className="borderBox" onClick={(e) => clickFilter(e.target)}><img alt='8' className='rec' src={img8}/></div>
-                        <div className="borderBox" onClick={(e) => clickFilter(e.target)}><img alt='9' className='rec' src={img9}/></div>
-                </div>
-                <Link to="/result">
-                    <Button className="submitButton" variant='contained'>결과 확인하기</Button>
-                </Link>
             </div>
         </div>
     );

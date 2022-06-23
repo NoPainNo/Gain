@@ -4,6 +4,7 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import MainPage from './pages/Main';
 import MainPage2 from './pages/Main_';
 import CreatePage from './pages/Create';
+import SelectPage from './pages/Select';
 import Test from './pages/Test';
 import ResultPage from './pages/Result';
 import UploadPage from './pages/Upload';
@@ -22,6 +23,7 @@ function App() {
           <Route path="/" element={<MainPage/>}/>
           <Route path="/main" element={<MainPage2/>}/>
           <Route path="/create" element={<CreatePage />}/>
+          <Route path="/select" element={<SelectPage />}/>
           <Route path="/test" element={<Test />}/>
           <Route path="/result" element={<ResultPage/>}/>
           <Route path="/upload" element={<UploadPage/>}/>

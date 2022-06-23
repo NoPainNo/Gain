@@ -53,6 +53,9 @@ export default function Upload(){
                             encodeFileToBase64(e.target.files[0]);
                         }}/>
                     </div> 
+                    <Link to="/select">
+                        <Button id="nextBtn" variant='contained'>다음</Button>
+                    </Link>
     
                     
                 </div>

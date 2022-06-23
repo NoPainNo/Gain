@@ -21,7 +21,7 @@ export default function Main(){
             </div>
   
            
-            <Link to="/create">
+            <Link to="/upload">
                 <Button variant='contained'>START</Button>
             </Link>
         </div>

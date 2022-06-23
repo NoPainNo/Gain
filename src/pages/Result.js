@@ -51,7 +51,7 @@ export default function Result (){
                 <div className='logo'>
                     <img src={logoImg}/>
                 </div>
-                <Typography style={{fontSize:'18px', marginTop:'5px',color:'#374B73'}}>
+                <Typography style={{fontSize:'18px', marginTop:'5px',color:'#FDF2EE'}}>
                     비율 설정
                 </Typography>
                 <div className='sliderWrap'>
@@ -86,10 +86,10 @@ export default function Result (){
                     </p>
                     </Box>
                 </Modal>
-                <Link to="/main">
+                <Link to="/select">
                     <Button variant='contained'>다른 필터 적용해보기</Button>
                 </Link>
-                <Link to="/create">
+                <Link to="/upload">
                     <Button variant='contained'>다른 사진으로 만들기</Button>
                 </Link>
                 <div className='buttonWrap'>
