@@ -1,6 +1,6 @@
 html{
     background-color: #F4F3EF;
-    background-image: url('../img/background.png');
+    height: 100vh;
 }
 a {
     text-decoration: none;
@@ -13,11 +13,14 @@ a {
     justify-content: center;
 }
 .Main {
-    width: 360px;
+    height:100vh;
+    width: 390px;
     display: flex;
     text-align: center;
     flex-direction: column;
     align-items: center;
+    background-image: url( "../img/disney.png");
+    background-size: cover;
 }
 .Main Button {
     background-color: #374B73;
@@ -28,6 +31,7 @@ a {
     font-family: Inter;
     font-weight: 700;
     font-size:xx-large;
+    margin-bottom: 50px;
 }
 .Main h2{
     font-family: Inter;
@@ -56,12 +60,13 @@ a {
 .Main .logoImg{
     position: absolute;
     left: 50%;
-    margin-left: -119px;
+    margin-left: -100px;
     top:50%;
-    margin-top: -135px;
+    margin-top: -110px;
+    width: 55%;
 }
 .Main .gainImg{
-    margin:30px;
+    margin:10px;
 }
 
 /* Main_ */
@@ -160,30 +165,21 @@ a {
     flex-direction: row;
     align-items: center;
     justify-content: flex-end;
+    background-image: url('../img/background.png');
 }
-.Create .sampleImg {
-    text-align: right;
-    padding-right :57px;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-}
-.Create .imgArray {
-    display: flex;
-    flex-wrap: wrap;
-    width: 780px;
-    height: 780px;
-}
-.Create .rec {
-    margin: 15px;
-}
+
 .Create .imgFrame {
     border: 4px dotted #989898;
     width: 354px;
     height: 354px;
     position: relative;
 }
-.Create .imgFrame img {
+#previewImg{
+    object-fit: contain;
+    width: 354px;
+    height: 354px;
+}
+#defaultImg{
     position: absolute;
     left:50%;
     top:50%;
@@ -225,16 +221,17 @@ a {
     font-size:25px;
     margin-top:19px;
 }
-.Create .submitButton {
-    background-color: #E9B657;
-    width:226px;
+.input-file-button{
+    background-color: #374B73;
+    width:350px;
     border-radius: 25px;
     height: 56px;
-    color:#374B73;
+    color:#E9B657;
     font-family: Inter;
     font-weight: 700;
     font-size:25px;
-    margin:19px;
+    margin-top:19px;
+    line-height: 56px;
 }
 .Create input{
     background-color: #374B73;
@@ -247,7 +244,21 @@ a {
     font-size:25px;
     margin:19px;
 }
-.Create .sampleImg h2{
+.Create .rec{
+    width:228px;
+    height: 228px;
+    border: #E9B657 dotted 1px;
+}
+
+
+/* SelectPage */
+
+.Select{
+    background-image: url('../img/background.png');
+    height: 844px;
+    width: 390px;
+}
+.Select .sampleImg h2{
     font-family: Inter;
     font-size: 80px;
     font-weight: 700;
@@ -255,12 +266,50 @@ a {
     padding-right: 15px;
     margin-bottom: 0;
 }
-.Create .rec{
-    width:228px;
-    height: 228px;
-    border: #E9B657 dotted 1px;
+.Select .sampleImg {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
+.Select .imgArray {
+    display: flex;
+    flex-wrap: wrap;
+    width: 320px;
+    height: 345px;
+    margin-top:20px;
+}
+.Select .borderBox {
+    border: 3px solid #E9B657;
+    padding: 0;
+    margin: 5px;
 
+}
+.Select .submitButton {
+    background-color: #E9B657;
+    width:140px;
+    height: 32px;
+    color:#374B73;
+    font-family: Inter;
+    font-weight: 700;
+    font-size:23px;
+    margin:19px;
+}
+.Select .instruction {
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 20px;
+}
+.Select .instruction p{
+    font-family: Noto Sans KR;
+    font-weight: 200;
+    font-size:18px;
+    color:#FDF2EE;
+    margin:2px;
+}
+.Select .instruction #bold{
+    font-weight: 700;
+}
 /* ResultPage */
 
 .Result{
@@ -270,6 +319,7 @@ a {
     align-items: center;
     width: 390px;
     height: 844px;
+    background-image: url('../img/background.png');
 }
 .Result .alineDiv{
     display: flex;
@@ -327,8 +377,13 @@ a {
     line-height: 16px;
 }
 .Result .gainImg{
-    margin: 15px;
+    margin: 30px;
 }
+
+#file-upload-button{
+    background-color: #374B73;
+}
+
 .Result .sliderWrap{
     display: flex;
     flex-direction: row;
