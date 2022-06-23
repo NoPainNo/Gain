@@ -6,6 +6,7 @@ import MainPage2 from './pages/Main_';
 import CreatePage from './pages/Create';
 import Test from './pages/Test';
 import ResultPage from './pages/Result';
+import UploadPage from './pages/Upload';
 
 import { useMediaQuery } from 'react-responsive'
 
@@ -23,6 +24,7 @@ function App() {
           <Route path="/create" element={<CreatePage />}/>
           <Route path="/test" element={<Test />}/>
           <Route path="/result" element={<ResultPage/>}/>
+          <Route path="/upload" element={<UploadPage/>}/>
         </Routes>
       </BrowserRouter>
     </div>

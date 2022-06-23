@@ -24,15 +24,15 @@ a {
     background-size: cover;
 }
 .Main Button {
-    background-color: #374B73;
-    width:350px;
+    background-color: #FDF2EE;
+    width:240px;
     border-radius: 30px;
-    height: 70px;
-    color:white;
+    height: 50px;
+    color:#374B73;
     font-family: Inter;
     font-weight: 700;
-    font-size:xx-large;
-    margin-bottom: 50px;
+    font-size:x-large;
+    margin-top: 50px;
 }
 .Main h2{
     font-family: Inter;
@@ -45,25 +45,25 @@ a {
     font-family: Noto Sans KR;
     text-align: center;
     font-weight: 400;
-    font-size:x-large;
+    font-size:23px;
     margin: 0;
-    color:#374B73;
+    color:#FDF2EE;
 }
 .Main .pText {
-    padding-bottom: 50px;
+    padding-bottom: 15px;
 }
 .Main .logo {
-    border: 4px dotted #989898;
-    width: 354px;
-    height: 354px;
+    border: 4px dotted #FDF2EE;
+    width: 260px;
+    height: 260px;
     position: relative;
 }
 .Main .logoImg{
     position: absolute;
     left: 50%;
-    margin-left: -100px;
+    margin-left: -80px;
     top:50%;
-    margin-top: -110px;
+    margin-top: -80px;
     width: 55%;
 }
 .Main .gainImg{
@@ -157,6 +157,45 @@ a {
     margin-top:80px;
 }
 
+/* UploadPage */
+.Upload {
+    height:100vh;
+    width: 390px;
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    align-items: center;
+    background-image: url( "../img/background.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.Upload .imgFrame {
+    border: 4px dotted #FDF2EE;
+    width: 260px;
+    height: 260px;
+    position: relative;
+    margin: auto;
+    margin-top: 20px;
+}
+
+.uploadBtns{
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+}
+
+#cameraBtn{
+    background-color: #FDF2EE;
+    width:268px;
+    border-radius: 25px;
+    height: 56px;
+    color:#374B73;
+    font-family: Inter;
+    font-weight: 700;
+    font-size:23px;
+}
+
 /* Create */
 
 .Create{
@@ -197,8 +236,8 @@ a {
 }
 #previewImg{
     object-fit: contain;
-    width: 354px;
-    height: 354px;
+    width: 260px;
+    height: 260px;
 }
 #defaultImg{
     position: absolute;
@@ -243,14 +282,14 @@ a {
     margin-top:19px;
 }
 .input-file-button{
-    background-color: #374B73;
-    width:350px;
+    background-color: #FDF2EE;
+    width:268px;
     border-radius: 25px;
     height: 56px;
-    color:#E9B657;
+    color:#374B73;
     font-family: Inter;
     font-weight: 700;
-    font-size:25px;
+    font-size:23px;
     margin-top:19px;
     line-height: 56px;
 }

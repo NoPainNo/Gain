@@ -53,8 +53,8 @@ export default function Create(){
                         이미지 가져오기
                     </label>
                     <input type="file" id="input-file" style={{display:"none"}} accept=".png, .jpg, .jpeg" required onChange={(e) => {
-                  encodeFileToBase64(e.target.files[0]);
-                }}/> 
+                        encodeFileToBase64(e.target.files[0]);
+                    }}/> 
     
                     <img alt='test' className='gainLogo' src={gainImg}/>
                 </div>
