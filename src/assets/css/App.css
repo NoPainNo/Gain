@@ -1,5 +1,6 @@
 html{
     background-color: #F4F3EF;
+    background-image: url('../img/background.png');
 }
 a {
     text-decoration: none;
@@ -171,6 +172,7 @@ a {
     display: flex;
     flex-wrap: wrap;
     width: 780px;
+    height: 780px;
 }
 .Create .rec {
     margin: 15px;
@@ -266,8 +268,8 @@ a {
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    width: 100vw;
-    height: 100vh;
+    width: 390px;
+    height: 844px;
 }
 .Result .alineDiv{
     display: flex;
@@ -277,8 +279,8 @@ a {
 }
 
 .Result .logo{
-    width: 354px;
-    height: 354px;
+    width: 276px;
+    height: 276px;
     border: 4px solid #989898;
     position: relative;
 }
@@ -286,18 +288,18 @@ a {
     position: absolute;
     left:50%;
     top:50%;
-    margin-left: -119px;
-    margin-top: -135px;
+    margin-left: -92px;
+    margin-top: -105px;
 }
 .Result Button{
-    background-color: #374B73;
-    width:355px;
+    background-color: #FDF2EE;
+    width:235px;
     border-radius: 25px;
-    height: 56px;
-    color:#E9B657;
+    height: 40px;
+    color:#374B73;
     font-family: Inter;
     font-weight: 700;
-    font-size:25px;
+    font-size:18px;
     margin-top:19px;
 }
 .Result .buttonWrap{
@@ -337,5 +339,21 @@ a {
     line-height: 16px;
 }
 .Result .gainImg{
-    margin: 30px;
+    margin: 15px;
+}
+.Result .sliderWrap{
+    display: flex;
+    flex-direction: row;
+    width:400px;
+}
+.Result .sliderWrap p{
+    width: 80px;
+    font-size: 12px;
+    margin-top: 0;
+    color:#374B73;
+}
+.Result .sliderWrap .slider{
+    margin-left: 20px;
+    margin-right: 20px;
+    color:#374B73;
 }
