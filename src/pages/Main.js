@@ -8,10 +8,10 @@ export default function Main(){
     return (
         <div className='Main'>
             <div>
-                <img className='gainImg' src={gainImg}/>
+                <img alt='gain' className='gainImg' src={gainImg}/>
             </div>
             <div className='logo'>
-                <img className='logoImg' src={logoImg}/>
+                <img alt='logo' className='logoImg' src={logoImg}/>
             </div>
             <h2>WELCOME</h2>
             <div className='pText'>
