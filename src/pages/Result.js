@@ -51,7 +51,7 @@ export default function Result (){
                 <div className='logo'>
                     <img src={logoImg}/>
                 </div>
-                <Typography style={{fontSize:'18px', marginTop:'5px',color:'#374B73'}}>
+                <Typography style={{fontSize:'18px', marginTop:'5px',color:'#FDF2EE'}}>
                     비율 설정
                 </Typography>
                 <div className='sliderWrap'>
