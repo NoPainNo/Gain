@@ -2,9 +2,11 @@ import './assets/css/App.css';
 import React from "react";
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import MainPage from './pages/Main';
-import MainPage_ from './pages/Main_';
+import MainPage2 from './pages/Main_';
 import CreatePage from './pages/Create';
 import Test from './pages/Test';
+import ResultPage from './pages/Result';
+
 import { useMediaQuery } from 'react-responsive'
 
 function App() {
@@ -17,9 +19,10 @@ function App() {
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<MainPage/>}/>
-          <Route path="/main" element={<MainPage_/>}/>
+          <Route path="/main" element={<MainPage2/>}/>
           <Route path="/create" element={<CreatePage />}/>
           <Route path="/test" element={<Test />}/>
+          <Route path="/result" element={<ResultPage/>}/>
         </Routes>
       </BrowserRouter>
     </div>

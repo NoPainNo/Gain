@@ -11,13 +11,13 @@ export default function Main_(){
     return (
         <div className='Main_'>
             <div className='gain'>
-                <img className='gainImg' src={gainImg}/>
+                <img alt='gain' className='gainImg' src={gainImg}/>
             </div>
             <div className='alineWelcome'>
                 <div className='welcome'>
                     <h2>WELCOME</h2>
                     <div className='logo'>
-                        <img className='logoImg' src={logoImg}/>
+                        <img alt='logo' className='logoImg' src={logoImg}/>
                     </div>
                     <div className='pText'>
                         <p>당신의 특별한 캐릭터</p>
@@ -26,13 +26,13 @@ export default function Main_(){
                     <Button variant='contained'>START</Button>
                     <div className='socialMediaLogo'>
                         <a href='https://www.facebook.com/'>
-                            <img src={facebookLogo}/>
+                            <img alt='facebookLogo' src={facebookLogo}/>
                         </a>
                         <a href='https://twitter.com/'>
-                            <img src={twitterLogo}/>
+                            <img alt='twitterLogo' src={twitterLogo}/>
                         </a>
                         <a href='https://www.instagram.com/'>
-                            <img src={instagramLogo}/>
+                            <img alt='instagramLogo' src={instagramLogo}/>
                         </a>
                     </div>
                 </div>

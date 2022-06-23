@@ -32,14 +32,14 @@ a {
     margin-bottom: 50px;
 }
 .Main h2{
-    font-style: Inter;
+    font-family: Inter;
     font-size:4.5em;
     font-weight: 700;
     color:#374B73;
     margin: 20px;
 }
 .Main p {
-    font-style: Noto Sans KR;
+    font-family: Noto Sans KR;
     text-align: center;
     font-weight: 400;
     font-size:x-large;
@@ -89,14 +89,14 @@ a {
     font-size:xx-large;
 }
 .Main_ h2{
-    font-style: Inter;
+    font-family: Inter;
     font-size:4.5em;
     font-weight: 700;
     color:#374B73;
     margin: 30px;
 }
 .Main_ p {
-    font-style: Noto Sans KR;
+    font-family: Noto Sans KR;
     text-align: center;
     font-weight: 400;
     font-size:x-large;
@@ -157,14 +157,19 @@ a {
 /* Create */
 
 .Create{
-    display: grid;
-    grid-template-columns: 7fr 8fr;
-}
-.Create .uploadImg {
-
+    width:100vw;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
 }
 .Create .sampleImg {
     text-align: right;
+    padding-right :57px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
 }
 .Create .imgArray {
     display: flex;
@@ -173,4 +178,172 @@ a {
 }
 .Create .rec {
     margin: 15px;
+}
+.Create .imgFrame {
+    border: 4px dotted #989898;
+    width: 354px;
+    height: 354px;
+    position: relative;
+}
+.Create .imgFrame img {
+    position: absolute;
+    left:50%;
+    top:50%;
+    margin-left: -36px;
+    margin-top: -36px;
+}
+.Create .uploadImg .gainLogo{
+    position: absolute;
+    left:40px;
+    top:29px;
+}
+.Create .uploadImg{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.Create .alineUploadImg{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.Create .uploadImg h2{
+    font-size: 65px;
+    font-weight: 700;
+    margin: 19px;
+    font-family: Inter;
+}
+.Create Button {
+    background-color: #374B73;
+    width:350px;
+    border-radius: 25px;
+    height: 56px;
+    color:#E9B657;
+    font-family: Inter;
+    font-weight: 700;
+    font-size:25px;
+    margin-top:19px;
+}
+.Create .submitButton {
+    background-color: #E9B657;
+    width:226px;
+    border-radius: 25px;
+    height: 56px;
+    color:#374B73;
+    font-family: Inter;
+    font-weight: 700;
+    font-size:25px;
+    margin:19px;
+}
+.Create input{
+    background-color: #374B73;
+    width:350px;
+    border-radius: 25px;
+    height: 56px;
+    color:#E9B657;
+    font-family: Inter;
+    font-weight: 700;
+    font-size:25px;
+    margin:19px;
+}
+.Create .sampleImg h2{
+    font-family: Inter;
+    font-size: 80px;
+    font-weight: 700;
+    line-height: 97px;
+    padding-right: 15px;
+    margin-bottom: 0;
+}
+.Create .rec{
+    width:228px;
+    height: 228px;
+    border: #E9B657 dotted 1px;
+}
+
+/* ResultPage */
+
+.Result{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+}
+.Result .alineDiv{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.Result .logo{
+    width: 354px;
+    height: 354px;
+    border: 4px solid #989898;
+    position: relative;
+}
+.Result .logo img{
+    position: absolute;
+    left:50%;
+    top:50%;
+    margin-left: -119px;
+    margin-top: -135px;
+}
+.Result Button{
+    background-color: #374B73;
+    width:355px;
+    border-radius: 25px;
+    height: 56px;
+    color:#E9B657;
+    font-family: Inter;
+    font-weight: 700;
+    font-size:25px;
+    margin-top:19px;
+}
+.Result .buttonWrap{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.Result .buttonWrap Button{
+    width: 56px;
+    height: 56px;
+    position: relative;
+    border-radius: 100%;
+}
+.Result .buttonWrap Button img{
+    position: absolute;
+    left:50%;
+    top:50%;
+    margin-left: -28px;
+    margin-top: -28px;
+}
+.Result .buttonWrap .button{
+    text-align: center;
+    margin: 25px;
+    margin-top: 10px;
+
+}
+.Result p{
+    font-family: Inter;
+    font-size: 25px;
+    font-weight: 700;
+    line-height: 30px;
+}
+.Result .buttonWrap p{
+    font-family: Inter;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 16px;
+}
+.Result .gainImg{
+    margin: 30px;
+}
+
+#file-upload-button{
+    background-color: #374B73;
 }
